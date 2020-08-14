@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let a = 2;
+        let x = 1 + (a *= 2);
+        alert(`a = ${a}\nx = ${x}`);
+        /*  ответ: а = 4, x = 5
+            Первое действие выполняется в скобках, т.к. у группировки () приоритет самый высокий /
+            в скобках значение переменной a умножается на 2 и результат произведения присваивается /
+            a (a = 2*2 = 4), затем выполняется оператор сложения 1 + а (в а лежит 4) и результат 5 /
+            присваивается переменной x
+        */ 
+    </script>
+</body>
+</html>
